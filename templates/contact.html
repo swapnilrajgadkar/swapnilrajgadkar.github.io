@@ -1,0 +1,81 @@
+{% extends "outside_base.html" %}
+{% block body %}
+<div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-container-spacer text-center">
+            <h1 class="h2">Contact</h1>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <form action="/submit_form" method="post" class="reveal-content">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <p style="font-weight: bold">Thank you for visiting my website.<br>
+                        Please don't hesitate to reach out if you have any questions or would like to discuss potential opportunities.
+                      </p>
+                      <div class="form-group">
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Enter Name">
+                      </div>
+                      <div class="form-group">
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+                      </div>
+                      <!-- <div class="form-group">
+                        <textarea name="subject" class="form-control" placeholder="Enter your subject"></textarea>
+                      </div> -->
+                      <div class="form-group">
+                        <textarea name="message" class="form-control" rows="5" placeholder="Enter your message"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary" value="Submit">Send</button>
+                    </div>
+                    <div class="col-md-5 address-container">
+                      <ul class="list-unstyled">
+                        <li>
+                          <span class="fa-icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                          </span>
+                          + 91 8668891958
+                        </li>
+                        <li>
+                          <span class="fa-icon">
+                            <i class="fa fa-at" aria-hidden="true"></i>
+                          </span>
+                          swapnilrajgadkarwani@gmail.com
+                        </li>
+                        <li>
+                          <span class="fa-icon">
+                            <i class="fa fa fa-map-marker" aria-hidden="true"></i>
+                          </span>
+                          Wani 445304, Maharashtra
+                        </li>
+                      </ul>
+                      <h3>Follow me on social networks</h3>
+                      <a href="https://www.facebook.com/swapnil.rajghadkar" title="" class="fa-icon" target="_blank" rel="noopener noreferrer">
+                        <i class='fa fa-facebook-square' style='color:#2f4fee'></i>
+                      </a>
+                      <a href="https://www.instagram.com/swapnil.rajgadkar/" title="" class="fa-icon" target="_blank" rel="noopener noreferrer">
+                        <i class='fa fa-instagram' style='color:#ff295e'></i>
+                      </a>
+                      <a href="https://twitter.com/SwapnilRajgadk2" title="" class="fa-icon" target="_blank" rel="noopener noreferrer">
+                        <i class='fa fa-twitter' style='color:#34bbfe'></i>
+                      </a>
+                      <a href="https://github.com/swapnilrajgadkar" title="" class="fa-icon" target="_blank" rel="noopener noreferrer">
+                        <i class='fa fa-github'></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/swapnil-rajgadkar-94264714b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BxFNUsiN8TpG%2B84X5n0XALg%3D%3D" title="" class="fa-icon" target="_blank" rel="noopener noreferrer">
+                        <i class='fa fa-linkedin' style='color:#0a70f5'></i>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+            </div>
+
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}

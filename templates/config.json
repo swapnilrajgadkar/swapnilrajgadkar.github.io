@@ -1,0 +1,10 @@
+{
+    "params" : 
+    {
+        "local_server": "True",
+        "local_uri" : "mysql+pymysql://root:password@localhost:7882/myportfoliowebsite",
+        "production_uri" : "mysql+pymysql://root:password@localhost:7882/myportfoliowebsite",
+        "gmail-user" : "swapnilrajgadkarwani@gmail.com",
+        "gmail-password" : "aehphvlqgitigerj"
+    }
+}

@@ -1,0 +1,34 @@
+{% extends "outside_base.html" %}
+{% block body %}
+<div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-container-spacer text-center">
+            <h1 class="h2">QR CODE CREATOR</h1>
+            <div style="text-align: center;">
+              <p style="margin: 0 auto; font-weight: bold; font-size: 22px;">It will give you the QR Code of your information.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <body>
+                  <form action="/submit_QR" method="post" class="reveal-content">
+                        <input name="qr_code" type="text" class="form-control" placeholder="Paste URL link, Text Message or Any Information" required>
+                        <p> &nbsp;</p>
+                        <input name="qr_code_name" type="text" class="form-control" placeholder="Give Name to Above QR CODE " required>
+                        <p> &nbsp;</p>
+                        <button type="submit" class="btn btn-default btn-lg">Submit</button>
+                        <button type="reset" class="btn btn-default btn-lg">Reset</button>
+                    </form>
+                </body>
+            </div>
+
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
